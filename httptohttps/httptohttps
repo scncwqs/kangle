@@ -1,5 +1,5 @@
 #!/bin/bash
 cd /vhs/kangle/nodewww/webftp/vhost/view/ws/
-wget -O https://raw.githubusercontent.com/scncwqs/kangle/master/httptohttps/ssl.html ssl.html
+wget https://raw.githubusercontent.com/scncwqs/kangle/master/httptohttps/ssl.html -O ssl.html
 cd /vhs/kangle/nodewww/webftp/vhost/control/
-wget -O https://raw.githubusercontent.com/scncwqs/kangle/master/httptohttps/index.ctl.php index.ctl.php
+wget https://raw.githubusercontent.com/scncwqs/kangle/master/httptohttps/index.ctl.php -O index.ctl.php
