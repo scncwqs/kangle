@@ -186,7 +186,8 @@
                         <div class="panel-body">
 						<br />
                    <form action='?c=index&a=ssl' method='post' class="form-horizontal">
-                           <fieldset>
+                           <fieldset><h4>我没有证书怎么办:[<a
+			href='https://freessl.cn/' target='_blank'>ssl证书在线生成</a>]</h4><br>
                               <div class="form-group">
                                  <label class="col-sm-2 control-label">ssl证书内容</label>
                                  <div class="col-sm-4">
@@ -210,13 +211,14 @@
                               </div>
                            </fieldset>
 						  </form> 
+                          <h4>注:当证书状态为失败/过期时，HTTP跳转HTTPS功能无效。</h4
 							{{if $ssl==1||$ssl_rewrite==1}}
 
 		 <fieldset>
                               <div class="form-group">
                                  <label class="col-sm-2 control-label">HTTP跳转HTTPS(强制HTTPS)</label>
 								 <div class="col-sm-4">
-{{if $ssl_rewrite==1}}                                   <label class="switch">
+{{if $ssl_rewrite==0}}                                   <label class="switch">
                                  <input type="checkbox" onclick="javascript:ssl_checkon(1)">
                                  <span></span>                              </label>
 				{{else}}
